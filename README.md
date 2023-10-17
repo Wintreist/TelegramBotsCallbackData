@@ -5,7 +5,7 @@
 
 # How its work? / Как это работает?
 ```python
-from TelegramBotsCallbackData import CallbackData
+from TelegramBotsCallbackData.main import CallbackData
 
 callback_data = CallbackData()
 
