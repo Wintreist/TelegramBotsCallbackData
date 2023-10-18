@@ -8,7 +8,7 @@ def readme():
 
 setup(
   name='TelegramBotsCallbackData',
-  version='2023.10.16',
+  version='2023.10.18',
   author='Wintreist',
   author_email='wintreist1811@gmail.com',
   description='This is a library for storing a lot of information in callback data',
