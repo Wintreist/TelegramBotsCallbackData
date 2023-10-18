@@ -18,6 +18,7 @@ limitations under the License.
 from  hashlib import sha256
 from pathlib import Path
 import pickle as pkl
+from copy import deepcopy
 
 
 class CallbackData(object):
@@ -53,7 +54,7 @@ class CallbackData(object):
 
     def restore(self, callback_data:str):
         if callback_data in self.data:
-            data:dict = self.data[callback_data]
+            data:dict = deepcopy(self.data[callback_data])
             just_once:bool = data.pop('just_once')
             if just_once:
                 del self.data[callback_data]
